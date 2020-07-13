@@ -12,7 +12,7 @@ Usage of BackDoor for attacking targets without prior mutual consent is illegal.
 
 ##### Usage:
 ```
-git clone https://github.com/xHak9x/SocialPhish.git
+git clone https://github.com/murkworld/BackDoor.git
 cd BackDoor
 chmod +x backdoor.sh
 ./backdoor.sh
